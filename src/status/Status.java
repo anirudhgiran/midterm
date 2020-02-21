@@ -15,6 +15,7 @@ import java.util.Scanner;
  * Use enumerators to avoid input errors
  * and print the status details. 
  * @author srinivsi
+ * @modifier Anirudh Giran
  */
 public class Status {
 
@@ -24,10 +25,16 @@ public class Status {
     public static void main(String[] args)
     {
     Scanner in =new Scanner(System.in);
-    System.out.println("Enter the user status code (zero,one,two,three) in string");
-    String code = in.next();
-    StausUser t= new StausUser();
-    t.statusDetail(code); 
+    System.out.println("\tStatus Codes: \n\t0 for ZERO\n\t1 for ONE\n\t2 for TWO\n\t3 for THREE");
+    System.out.print("\t\tEnter Code: ");
+    int i = in.nextInt();
+    
+    StausUser obj = new StausUser();
+    obj.statusDetail(i);
+    
+    
+    
+    
     }
     
 }
